@@ -139,8 +139,13 @@ Por
 ```
 15. En el Visual Studio Code, modificar el archivo program.cs, debajo de la linea que indica `// Add services to the container`.
 ```
-builder.Services.AddDbContext<BdClientesContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("ClienteDB")));
+builder.Services.AddDbContext<ClienteAPI.Data.BdClientesContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("ClienteDB")));
 ```
+Amismo adicionar en la primera linea
+```
+using Microsoft.EntityFrameworkCore;
+```
+
 16. Nuevamente en el terminal. Ejecutar la aplicación para verificar que este funcionando.
 ```
 dotnet run
@@ -179,6 +184,14 @@ ENTRYPOINT ["dotnet", "ClienteAPI.dll"]
       - ConnectionStrings__ClienteDB=Server=bd_clientes;Database=BD_CLIENTES;User Id=sa;Password=Upt.2022;TrustServerCertificate=true
     depends_on:
       - bd
+```
+19. En el Visual Studio Code, con el siguiente contenido al final del archivo. 
+```
+//if (app.Environment.IsDevelopment())
+//{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+//}
 ```
 
 ---
