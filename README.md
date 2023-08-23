@@ -16,6 +16,7 @@
     - Windows 10 64bit: Pro, Enterprise o Education (1607 Anniversary Update, Build 14393 o Superior)
     - Docker Desktop 
     - Powershell versión 7.x
+    - .Net 6 o superior
 
 ## CONSIDERACIONES INICIALES
   * Clonar el repositorio mediante git para tener los recursos necesaarios
