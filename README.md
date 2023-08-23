@@ -118,7 +118,7 @@ dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
 12. En el Visual Studio Code, editar el archivo appsetting.json, que se encuentra en el proyecto ClienteAPI, y adicionar lo siguiente despues de la apertura de la primera llave.
 ```JSON
   "ConnectionStrings": {
-    "ClienteDB": "Server=(local),16111;Database=BD_CLIENTES;User Id=sa;Password=Upt.2022;TrustServerCertificate=true"
+    "ClienteDB": "Server=(local);Database=BD_CLIENTES;User Id=sa;Password=Upt.2022;TrustServerCertificate=true"
   },
 ```
 13. De regreso en el Terminal, ejecutar el siguiente comando para importar las estructuras de datos de la base de datos.
