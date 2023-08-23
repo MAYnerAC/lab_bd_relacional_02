@@ -129,6 +129,14 @@ dotnet ef dbcontext scaffold "Name=ConnectionStrings:ClienteDB" Microsoft.Entity
 ```
 dotnet aspnet-codegenerator controller -name TiposDocumentosController -async -api -m TiposDocumento -dc BdClientesContext -outDir Controllers
 ```
+En el Visual Studio Code, ubicar la clase BdClientesContext, en la ruta ClienteAPI/Data y modificar la linea que dice.
+```C#
+=> optionsBuilder.UseSqlServer("Name=ConnectionStrings:ClienteDB");
+```
+Por
+```C#
+=> optionsBuilder.UseSqlServer("ClienteDB");
+```
 15. En el Visual Studio Code, modificar el archivo program.cs, debajo de la linea que indica `// Add services to the container`.
 ```
 builder.Services.AddDbContext<BdClientesContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("ClienteDB")));
