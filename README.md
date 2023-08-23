@@ -7,7 +7,7 @@
   * Conocimientos: 
     - Conocimientos básicos de administración de base de datos Microsoft SQL Server.
     - Conocimientos básicos de SQL.
-    - Conocimientos Powershell.
+    - Conocimientos shell y comandos en modo terminal.
   * Hardware:
     - Virtualization activada en el BIOS.
     - CPU SLAT-capable feature.
