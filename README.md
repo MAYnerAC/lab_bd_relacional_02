@@ -202,3 +202,5 @@ docker-compose up -d
 ---
 ## Actividades Encargadas
 1. Completar los controladores para las clases Cliente y ClientesDocumento.
+
+<script src="https://gist.github.com/p-cuadros/7a146fe1754e2b6fc04dd9b58f8c6350.js"></script>
