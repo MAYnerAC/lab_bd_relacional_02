@@ -555,3 +555,49 @@ dotnet restore
 dotnet build
 dotnet run
 ```
+
+### Ingresar registros en Swagger:
+
+- Endpoints de Cliente
+
+```json
+{
+  "idCliente": 0,
+  "nomCliente": "Juan Pérez"
+}
+```
+
+```json
+{
+  "idCliente": 0,
+  "nomCliente": "Juan Pérez",
+  "clientesDocumentos": [
+    {
+      "idTipoDocumento": 1,
+      "numDocumento": "12345678"
+    },
+    {
+      "idTipoDocumento": 2,
+      "numDocumento": "20123456789"
+    }
+  ]
+}
+```
+
+- Endpoints de TiposDocumento
+
+```json
+{
+  "desTipoDocumento": "Pasaporte"
+}
+```
+
+- Endpoints de ClientesDocumento
+
+```json
+{
+  "idCliente": 4,
+  "idTipoDocumento": 3,
+  "numDocumento": "87654321"
+}
+```
